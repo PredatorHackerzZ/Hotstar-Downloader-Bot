@@ -4,11 +4,9 @@
 
 # the logging things
 import logging
-logging.basicConfig(
-    level=logging.DEBUG, 
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-LOGGER = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 import asyncio
 import json
@@ -16,26 +14,21 @@ import math
 import os
 import time
 
-from anydlbot import(
-        AUTH_USERS,
-        HTTP_PROXY,
-        DOWNLOAD_LOCATION,
-        DEF_THUMB_NAIL_VID_S
-)
+# the secret configuration specific things
+if bool(os.environ.get("WEBHOOK", False)):
+    from sample_config import Config
+else:
+    from config import Config
 
 # the Strings used for this "thing"
 from translation import Translation
 
-from pyrogram import(
-        Client,
-        Filters,
-        InlineKeyboardButton,
-        InlineKeyboardMarkup
-)
+import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from anydlbot.helper_funcs.display_progress import humanbytes
-from anydlbot.helper_funcs.help_uploadbot import DownLoadFile
+from helper_funcs.chat_base import TRChatBase
+from helper_funcs.display_progress import humanbytes
+from helper_funcs.help_uploadbot import DownLoadFile
 
 
 @Client.on_message(Filters.regex(pattern=".*http.*"))
