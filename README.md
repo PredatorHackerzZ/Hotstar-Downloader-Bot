@@ -1,11 +1,15 @@
 ## Made from [AnyDLBot](https://telegram.dog/AnyDLBot)
 
+ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
+
 
 **My Features**:
 
 👉 All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html
 
 👉 Upload as file from any HTTP link
+
+👉 Added HOTSTAR Link Support!!
 
 ### Installation
 
