@@ -238,6 +238,7 @@ async def echo(bot, update):
 
         thumbnail = Config.DEF_THUMB_NAIL_VID_S
         thumbnail_image = Config.DEF_THUMB_NAIL_VID_S
+        thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
 
         if not os.path.exists(thumb_image_path):
             mes = await thumb(update.from_user.id)
