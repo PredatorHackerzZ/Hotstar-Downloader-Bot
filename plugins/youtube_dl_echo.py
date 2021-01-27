@@ -19,7 +19,6 @@ from translation import Translation
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
@@ -33,7 +32,7 @@ async def echo(bot, update):
             revoke=True
         )
         return
-    TRChatBase(update.from_user.id, update.text, "/echo")
+        
     url = update.text
     youtube_dl_username = None
     youtube_dl_password = None

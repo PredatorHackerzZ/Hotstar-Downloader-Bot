@@ -8,7 +8,6 @@ else:
 from pyrogram import Client, filters    
 
 from translation import Translation
-from helper_funcs.chat_base import TRChatBase
 
 
 @Client.on_message(filters.photo)
@@ -20,7 +19,6 @@ async def save_photo(bot, update):
             revoke=True
         )
         return
-    TRChatBase(update.from_user.id, update.text, "save_photo")
     if update.media_group_id is not None:
         download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(update.media_group_id) + "/"
         if not os.path.isdir(download_location):
@@ -51,7 +49,6 @@ async def delete_thumbnail(bot, update):
             revoke=True
         )
         return
-    TRChatBase(update.from_user.id, update.text, "deletethumbnail")
     download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     try:
         os.remove(download_location + ".jpg")

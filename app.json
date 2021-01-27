@@ -18,10 +18,6 @@
       "description": "Your bot token from @botfather, as a string.",
       "value": ""
     },
-    "CHAT_BASE_TOKEN": {
-      "description": "Your chat base token, as a string.",
-      "value": ""
-    },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
@@ -31,7 +27,7 @@
       "value": ""
     },
     "SCREENSHOTS": {
-      "description": "Generate screenshots for file after uploading ( True or False )",
+      "description": "Generate screenshots for file after uploading ( True or false )",
       "value": "True",
       "required": false
     },

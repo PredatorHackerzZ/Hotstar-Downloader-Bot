@@ -5,7 +5,6 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 
-from helper_funcs.chat_base import TRChatBase
 from translation import Translation
 
 from pyrogram import Client, filters
@@ -13,7 +12,6 @@ from pyrogram import Client, filters
 
 @Client.on_message(filters.command(["help"]))
 async def help_user(bot, update):
-    TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
@@ -25,7 +23,6 @@ async def help_user(bot, update):
 
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
-    TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
@@ -35,7 +32,6 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["upgrade"]))
 async def upgrade(bot, update):
-    TRChatBase(update.from_user.id, update.text, "/upgrade")
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.UPGRADE_TEXT,
