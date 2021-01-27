@@ -2,9 +2,9 @@
 
 ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
-### If you find any bugs, report to [prgofficial](https://telegram.dog/prgofficial)
+#### If you find any bugs, report to [prgofficial](https://telegram.dog/prgofficial)
 
-**Features**:
+### Features
 
 👉 All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html
 
