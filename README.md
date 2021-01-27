@@ -9,14 +9,23 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 👉 Upload as file from any HTTP link
 
-👉 Added HOTSTAR Link Support!!
+👉 Added HOTSTAR Link Support!!  (Not Working due to youtube-dl problems)
 
 ### Installation
 
 #### The Easiest Way
 
-**upgrade** your subscription for [@AnyDLBot](https://telegram.dog/AnyDLBot) without having to run anything on your own
+**Upgrade** your subscription for [@AnyDLBot](https://telegram.dog/AnyDLBot) without having to run anything on your own
 
-#### The Easy Way
+#### Deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/prgofficial/URLuploader-With-Hotstar)
+
+#### Run in your VPS
+```sh
+git clone https://github.com/prgofficial/URLuploader-With-Hotstar
+cd URLuploader-With-Hotstar
+pip3 install -r requirements.txt
+# <Create config.py appropriately>
+python3 bot.py
+```
