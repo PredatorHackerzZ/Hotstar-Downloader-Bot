@@ -1,17 +1,7 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
-
-# the logging things
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-
-import asyncio
 import os
 import time
+import asyncio
+
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 
@@ -20,7 +10,6 @@ async def place_water_mark(input_file, output_file, water_mark_file):
     watermarked_file = output_file + ".watermark.png"
     metadata = extractMetadata(createParser(input_file))
     width = metadata.get("width")
-    # https://stackoverflow.com/a/34547184/4723940
     shrink_watermark_file_genertor_command = [
         "ffmpeg",
         "-i", water_mark_file,
@@ -29,14 +18,11 @@ async def place_water_mark(input_file, output_file, water_mark_file):
         "scale={}*0.5:-1".format(width),
         watermarked_file
     ]
-    # print(shrink_watermark_file_genertor_command)
     process = await asyncio.create_subprocess_exec(
         *shrink_watermark_file_genertor_command,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,
     )
-    # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
@@ -45,21 +31,14 @@ async def place_water_mark(input_file, output_file, water_mark_file):
         "-i", input_file,
         "-i", watermarked_file,
         "-filter_complex",
-        # https://stackoverflow.com/a/16235519
-        # "\"[0:0] scale=400:225 [wm]; [wm][1:0] overlay=305:0 [out]\"",
-        # "-map \"[out]\" -b:v 896k -r 20 -an ",
         "\"overlay=(main_w-overlay_w):(main_h-overlay_h)\"",
-        # "-vf \"drawtext=text='@FFMovingPictureExpertGroupBOT':x=W-(W/2):y=H-(H/2):fontfile=" + Config.FONT_FILE + ":fontsize=12:fontcolor=white:shadowcolor=black:shadowx=5:shadowy=5\"",
         output_file
     ]
-    # print(commands_to_execute)
     process = await asyncio.create_subprocess_exec(
         *commands_to_execute,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,
     )
-    # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
@@ -67,7 +46,6 @@ async def place_water_mark(input_file, output_file, water_mark_file):
 
 
 async def take_screen_shot(video_file, output_directory, ttl):
-    # https://stackoverflow.com/a/13891070/4723940
     out_put_file_name = output_directory + \
         "/" + str(time.time()) + ".jpg"
     file_genertor_command = [
@@ -83,11 +61,9 @@ async def take_screen_shot(video_file, output_directory, ttl):
     # width = "90"
     process = await asyncio.create_subprocess_exec(
         *file_genertor_command,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,
     )
-    # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
@@ -96,10 +72,8 @@ async def take_screen_shot(video_file, output_directory, ttl):
     else:
         return None
 
-# https://github.com/Nekmo/telegram-upload/blob/master/telegram_upload/video.py#L26
 
 async def cult_small_video(video_file, output_directory, start_time, end_time):
-    # https://stackoverflow.com/a/13891070/4723940
     out_put_file_name = output_directory + \
         "/" + str(round(time.time())) + ".mp4"
     file_genertor_command = [
@@ -118,11 +92,9 @@ async def cult_small_video(video_file, output_directory, start_time, end_time):
     ]
     process = await asyncio.create_subprocess_exec(
         *file_genertor_command,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,
     )
-    # Wait for the subprocess to finish
     stdout, stderr = await process.communicate()
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()

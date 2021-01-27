@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
-
-# the logging things
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
 import os
 import requests
 
@@ -23,7 +13,6 @@ def DownLoadFile(url, file_name, chunk_size, client, ud_type, message_id, chat_i
     if not url:
         return file_name
     r = requests.get(url, allow_redirects=True, stream=True)
-    # https://stackoverflow.com/a/47342052/4723940
     total_size = int(r.headers.get("content-length", 0))
     downloaded_size = 0
     with open(file_name, 'wb') as fd:
