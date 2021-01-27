@@ -10,7 +10,7 @@ from translation import Translation
 from pyrogram import Client, filters
 
 
-@Client.on_message(filters.command(["help"]))
+@Client.on_message(filters.private & filters.command(["help"]))
 async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
@@ -21,7 +21,7 @@ async def help_user(bot, update):
     )
 
 
-@Client.on_message(filters.command(["start"]))
+@Client.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
@@ -30,7 +30,7 @@ async def start(bot, update):
     )
 
 
-@Client.on_message(filters.command(["upgrade"]))
+@Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
