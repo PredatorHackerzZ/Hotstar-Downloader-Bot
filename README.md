@@ -9,7 +9,9 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 👉 Upload as file from any HTTP link
 
-👉 Added HOTSTAR Link Support!!  (Not Working due to youtube-dl problems)
+👉 Permanent thumbnail support.
+
+👉 Added HOTSTAR Link Support!!  (Currently Not Working due to youtube-dl problems)
 
 ### Installation
 
@@ -29,3 +31,10 @@ pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 bot.py
 ```
+
+### Commands
+
+* /start             - Check if bot is alive
+* /help              - To know how the bot works
+* /upgrade           - Nothing much here
+* /deletethumbnail   - Clear saved thumbnail
