@@ -43,7 +43,7 @@ URL | newfilename | username | password"""
 
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
 
-    SAVED_CUSTOM_THUMB_NAIL = "Custom thumbnail saved. This will be permanant.\n\nUse /deletethumbnail to clear it."
+    SAVED_CUSTOM_THUMB_NAIL = "Custom thumbnail saved. This will be permanent.\n\nUse /deletethumbnail to clear it."
 
     DEL_ETED_CUSTOM_THUMB_NAIL = "Custom thumbnail cleared succesfully."
 
