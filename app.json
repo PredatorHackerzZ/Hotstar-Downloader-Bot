@@ -41,7 +41,7 @@
       "required": false
     },
     "DEF_THUMB_NAIL_VID_S": {
-      "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
+      "description": "default thumbnail link to be used in the videos if youtube-dl is unable to find a thumbnail. Get a link for your image from @TGraphHEXbot",
       "value": "",
       "required": false
     },
