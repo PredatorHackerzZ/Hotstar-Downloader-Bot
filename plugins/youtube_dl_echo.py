@@ -33,7 +33,7 @@ async def echo(bot, update):
             revoke=True
         )
         return
-        
+    intmsg = await update.reply_text("Analyzing given link...", quote=True)   
     url = update.text
     youtube_dl_username = None
     youtube_dl_password = None
@@ -261,6 +261,7 @@ async def echo(bot, update):
                     update.message_id,
                     update.chat.id
                 )
+        await intmsg.delete()
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(thumbnail) + "\n\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
@@ -285,6 +286,8 @@ async def echo(bot, update):
             )
         ])
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
+
+        await intmsg.delete()
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION.format(""),
