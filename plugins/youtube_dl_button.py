@@ -168,8 +168,17 @@ async def youtube_dl_call_back(bot, update):
         try:
             file_size = os.stat(download_directory).st_size
         except FileNotFoundError as exc:
-            download_directory = os.path.splitext(download_directory)[0] + "." + "mkv"
-            file_size = os.stat(download_directory).st_size
+            try:
+                download_directory = os.path.splitext(download_directory)[0] + "." + "mkv"
+                file_size = os.stat(download_directory).st_size
+            except Exception as e:
+                await bot.edit_message_text(
+                    chat_id=update.message.chat.id,
+                    text="Some errors occured while downloading video!",
+                    message_id=update.message.message_id
+                )
+                logger.info("FnF error - " + str(e))
+                return
         if file_size > Config.TG_MAX_FILE_SIZE:
             await bot.edit_message_text(
                 chat_id=update.message.chat.id,
