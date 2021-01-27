@@ -1,6 +1,8 @@
 aiohttp
 beautifulsoup4
 hachoir
+sqlalchemy
+psycopg2-binary
 numpy
 Pillow
 pyrogram==1.0.7

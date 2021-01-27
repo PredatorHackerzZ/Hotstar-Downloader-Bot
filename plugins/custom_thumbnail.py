@@ -8,6 +8,7 @@ else:
 from pyrogram import Client, filters    
 
 from translation import Translation
+from helper_funcs.database import *
 
 
 @Client.on_message(filters.private & filters.photo)
@@ -23,12 +24,14 @@ async def save_photo(bot, update):
         download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(update.media_group_id) + "/"
         if not os.path.isdir(download_location):
             os.makedirs(download_location)
+        await df_thumb(update.from_user.id, update.message_id)
         await bot.download_media(
             message=update,
             file_name=download_location
         )
     else:
         download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
+        await df_thumb(update.from_user.id, update.message_id)
         await bot.download_media(
             message=update,
             file_name=download_location
@@ -49,12 +52,18 @@ async def delete_thumbnail(bot, update):
             revoke=True
         )
         return
-    download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
+    thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
+    
     try:
-        os.remove(download_location + ".jpg")
-        # os.remove(download_location + ".json")
+        await del_thumb(update.from_user.id)
     except:
         pass
+
+    try:
+        os.remove(thumb_image_path)
+    except:
+        pass
+
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.DEL_ETED_CUSTOM_THUMB_NAIL,

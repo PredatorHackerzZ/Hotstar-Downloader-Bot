@@ -44,4 +44,7 @@ class Config(object):
 
     # watermark file
     DEF_WATER_MARK_FILE = ""
+
+    # Sql Database url
+    DB_URI = os.environ.get("DATABASE_URL", "")
     
