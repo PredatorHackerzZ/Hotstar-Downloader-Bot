@@ -23,7 +23,7 @@ from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
 
-@Client.on_message(filters.regex(pattern=".*http.*"))
+@Client.on_message(filters.private & filters.regex(pattern=".*http.*"))
 async def echo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
