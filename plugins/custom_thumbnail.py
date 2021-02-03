@@ -95,13 +95,13 @@ async def show_thumb(bot, update):
             await bot.send_photo(
                 chat_id=update.chat.id,
                 photo=thumb_image_path,
-                caption=script.SHOW_THUMB
+                caption=Translation.SHOW_THUMB
             )
         except:
             pass
     else:
         await bot.send_message(
             chat_id=update.chat.id,
-            text=script.NO_THUMB,
+            text=Translation.NO_THUMB,
             reply_to_message_id=update.message_id
         )
