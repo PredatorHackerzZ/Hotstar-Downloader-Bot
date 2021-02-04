@@ -12,7 +12,7 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 👉 Permanent thumbnail support.
 
-👉 Added HOTSTAR Link Support!!  (Currently Not Working due to youtube-dl problems)
+👉 Added HOTSTAR Link Support!!  (Won't work on European Servers!!)
 
 
 
