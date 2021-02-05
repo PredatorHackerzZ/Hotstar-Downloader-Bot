@@ -11,26 +11,24 @@ import os
 import shutil
 import time
 
-from PIL import Image
-from datetime import datetime
-
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
     from config import Config
 
-from translation import Translation
-
-from hachoir.metadata import extractMetadata
+from PIL import Image
+from datetime import datetime
 from hachoir.parser import createParser
+from hachoir.metadata import extractMetadata
+
+from translation import Translation
+from helper_funcs.database import thumb
 from helper_funcs.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
 
 
 async def ddl_call_back(bot, update):
     cb_data = update.data
     tg_send_type, youtube_dl_format, youtube_dl_ext = cb_data.split("=")
-    thumb_image_path = Config.DOWNLOAD_LOCATION + \
-        "/" + str(update.from_user.id) + ".jpg"
 
     youtube_dl_url = update.message.reply_to_message.text
     custom_file_name = os.path.basename(youtube_dl_url)
@@ -119,6 +117,16 @@ async def ddl_call_back(bot, update):
                 if metadata is not None:
                     if metadata.has("duration"):
                         duration = metadata.get('duration').seconds
+
+            thumb_image_path = Config.DOWNLOAD_LOCATION + \
+                "/" + str(update.from_user.id) + ".jpg"
+
+            if not os.path.exists(thumb_image_path):
+                mes = await thumb(update.from_user.id)
+                if mes != None:
+                    m = await bot.get_messages(update.chat.id, mes.msg_id)
+                    await m.download(file_name=thumb_image_path)
+                    thumb_image_path = thumb_image_path
 
             if os.path.exists(thumb_image_path):
                 width = 0
@@ -214,9 +222,12 @@ async def ddl_call_back(bot, update):
             end_two = datetime.now()
             try:
                 os.remove(download_directory)
-                os.remove(thumb_image_path)
             except:
                 pass
+            try:
+                os.remove(thumb_image_path)
+            except:
+                pass            
             time_taken_for_download = (end_one - start).seconds
             time_taken_for_upload = (end_two - end_one).seconds
             await bot.edit_message_text(
