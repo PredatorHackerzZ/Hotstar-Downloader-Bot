@@ -61,3 +61,4 @@ async def thumb(id):
         return t
     finally:
         SESSION.close()
+
