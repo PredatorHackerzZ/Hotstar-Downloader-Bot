@@ -2,7 +2,7 @@
 
 ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
-#### If you find any bugs, report to [prgofficial](https://telegram.dog/prgofficial)
+#### If you find any bugs, report to [Kirodewal](https://telegram.dog/Kirodewal)
 
 ### Features
 
@@ -20,15 +20,15 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 #### The Easiest Way
 
-**Upgrade** your subscription for [@AnyDLBot](https://telegram.dog/AnyDLBot) without having to run anything on your own
+**Upgrade** your subscription for [@HxUrlUploadBot](https://telegram.dog/Hx_UrlUploadBot) without having to run anything on your own
 
 #### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/prgofficial/URLuploader-With-Hotstar)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy)
 
 #### Run in your VPS
 ```sh
-git clone https://github.com/prgofficial/URLuploader-With-Hotstar
+git clone https://github.com/Kirodewal/URLuploader-With-Hotstar
 cd URLuploader-With-Hotstar
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
