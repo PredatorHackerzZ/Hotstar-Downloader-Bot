@@ -3,15 +3,15 @@ import os
 class Config(object):
 
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = "1746903731:AAExBqFKz2SeNCe1Q6V7kd6qodYO2yepC0w"
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = 924859
+    API_HASH = "a4c9a18cf4d8cb24062ff6916597f832"
 
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = "1002182448"
 
     # Ban Unwanted Members..
     BANNED_USERS = []
@@ -27,7 +27,7 @@ class Config(object):
 
     # Generate screenshots for file after uploading
     # Defaults to True
-    SCREENSHOTS = os.environ.get("SCREENSHOTS", "True")
+    SCREENSHOTS = True
 
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
@@ -43,8 +43,8 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3600
 
     # watermark file
-    DEF_WATER_MARK_FILE = ""
+    DEF_WATER_MARK_FILE = "Uploaded By: @Hx URLUpload Bot"
 
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
-    
+    DB_URI = "postgres://jeohpdfhlhdgtz:591ee700f7c2d4b3f368e2c10599bf5b372bce649f51b47b2110c2813f479a60@ec2-52-45-73-150.compute-1.amazonaws.com:5432/d9470iujavjoqb"
+
