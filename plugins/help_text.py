@@ -30,10 +30,7 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        button_list = [
-                          InlineKeyboardButton("Update Channel", url="https://t.me/HxBots"),
-                          InlineKeyboardButton("Support Group", url="https://t.me/HxSupport")
-                      ]
+        
    )
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
