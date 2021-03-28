@@ -19,12 +19,7 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-                [
-                   InlineKeyboardButton("By Me A Coffee", url="https://pay2me.vercel.app/kkirodewal@okaxis")
-                ]
-    )
+        
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
@@ -34,23 +29,7 @@ async def start(bot, update):
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
         reply_to_message_id=update.message_id,
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("Help Msg", f"help")
-                ],
-                [
-                    InlineKeyboardButton("Update Channel", url="https://t.me/HxBots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/HxSupport")
-                ],
-                [
-                   InlineKeyboardButton("By Me A Coffee", url="https://pay2me.vercel.app/kkirodewal@okaxis")
-                ]
-            ]
-        )
-     )
-    )
+        
 
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
