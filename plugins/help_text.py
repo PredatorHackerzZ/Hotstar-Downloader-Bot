@@ -32,8 +32,8 @@ async def help_user(bot, update):
         reply_to_message_id=update.message_id,
         button_list = [
     [
-        InlineKeyboardButton("Update Channel", url="https://t.me/HxBots),
-        InlineKeyboardButton("Support Group", url="https://t.me/HxSupport)
+        InlineKeyboardButton("Update Channel", url="https://t.me/HxBots"),
+        InlineKeyboardButton("Support Group", url="https://t.me/HxSupport")
     ],
     [
         InlineKeyboardButton("Buy Me A Coffee ☕", url="https://pay2me.vercel.app/kkirodewal@okaxis")
