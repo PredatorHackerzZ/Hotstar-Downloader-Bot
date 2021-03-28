@@ -33,12 +33,8 @@ async def help_user(bot, update):
         button_list = [
                           InlineKeyboardButton("Update Channel", url="https://t.me/HxBots"),
                           InlineKeyboardButton("Support Group", url="https://t.me/HxSupport")
-                      ],
-
-                      [
-                          InlineKeyboardButton("Buy Me A Coffee ☕", url="https://pay2me.vercel.app/kkirodewal@okaxis")
                       ]
-    )
+   )
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgrade(bot, update):
