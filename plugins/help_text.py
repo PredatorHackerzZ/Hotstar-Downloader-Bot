@@ -18,20 +18,7 @@ async def start(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("Command Help", f"help")
-                ],
-                [
-                    InlineKeyboardButton("Update Channel", url="https://t.me/HxBots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/HxSupport")
-                ],
-                [
-                   InlineKeyboardButton("By Me A Coffee", url="https://pay2me.vercel.app/kkirodewal@okaxis")
-                ]
-            ]
-        )
+        
         
     )
 
@@ -43,7 +30,14 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        
+        button_list = [
+    [
+        InlineKeyboardButton("Update Channel", url="https://t.me/HxBots),
+        InlineKeyboardButton("Support Group", url="https://t.me/HxSupport)
+    ],
+    [
+        InlineKeyboardButton("Buy Me A Coffee ☕", url="https://pay2me.vercel.app/kkirodewal@okaxis")
+    ]
     )
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
