@@ -11,7 +11,8 @@ from pyrogram import Client, filters
 
 
 @Client.on_message(filters.private & filters.command(["help"]))
-async def help_user(c,m):
+
+async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
@@ -27,7 +28,8 @@ async def help_user(c,m):
 
 
 @Client.on_message(filters.private & filters.command(["start"]))
-async def start(c,m):
+
+async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
