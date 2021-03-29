@@ -25,6 +25,7 @@ async def start(bot, update):
 
 @Client.on_message(filters.private & filters.command(["help"]))
 async def help_user(bot, update):
+
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
