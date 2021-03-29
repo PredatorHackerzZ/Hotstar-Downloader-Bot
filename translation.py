@@ -24,7 +24,23 @@ Support Group : @HxSupport
 Support Group : @HxSupport
 """
 
-    FORMAT_SELECTION = """Select the desired format: <a href='{}'>file size might be approximate</a>
+  ABOUT_TEXT = """⭕️<b>My Name : HxURLuploaf Bot</b>
+
+⭕️<b>Creater :</b> @Kirodewal
+
+⭕️<b>Language :</b> <code>Python3</code>
+
+⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+
+⭕️<b>Source Code :</b> 👉 <a href='https://github.com/Kirodewal/URLuploader-With-Hotstar'>Click Here</a>"""
+
+
+    FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'>⬇️</a>
+
+🎞  - Stream format
+📁  - File format
+
+<i>NOTE : Taking high resolutions may result in files above 2GB and hence cannot Upload to TG. So better select a medium resolution.</i> 😇
     
 Send your custum thumbnail if required.
 You can use /deletethumbnail to delete the auto-generated thumbnail."""
