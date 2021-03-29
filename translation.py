@@ -25,7 +25,7 @@ Support Group : @HxSupport
 """
 
 
-   ABOUT_TEXT = """⭕️<b>My Name :</b> @HxURLuploadBot.
+    ABOUT_TEXT = """⭕️<b>My Name :</b> @HxURLuploadBot
 
 ⭕️<b>Creater :</b> @Kirodewal
 
