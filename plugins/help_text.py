@@ -9,6 +9,8 @@ from translation import Translation
 
 from pyrogram import Client, filters
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
