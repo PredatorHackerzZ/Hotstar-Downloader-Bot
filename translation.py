@@ -24,7 +24,8 @@ Support Group : @HxSupport
 Support Group : @HxSupport
 """
 
-  ABOUT_TEXT = """⭕️<b>My Name : HxURLuploaf Bot</b>
+
+   ABOUT_TEXT = """⭕️<b>My Name : HxURLupload Bot</b>
 
 ⭕️<b>Creater :</b> @Kirodewal
 
@@ -33,6 +34,7 @@ Support Group : @HxSupport
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
 
 ⭕️<b>Source Code :</b> 👉 <a href='https://github.com/Kirodewal/URLuploader-With-Hotstar'>Click Here</a>"""
+
 
 
     FORMAT_SELECTION = """<b>Choose appropriate option</b> <a href='{}'>⬇️</a>
