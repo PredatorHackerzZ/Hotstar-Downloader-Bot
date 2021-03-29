@@ -34,15 +34,15 @@ Support Group : @HxSupport
 """
 
 
-    ABOUT_TEXT = """⭕️<b>My Name :</b> @HxURLuploadBot
+    ABOUT_TEXT = """⭕️<b>My Name : @HxURLuploadBot</b>
 
-⭕️<b>Creater :</b> @Kirodewal
+⭕️<b>Creater : @Kirodewal</b>
 
-⭕️<b>Language :</b> <code>Python3</code>
+⭕️<b>Language : Python3</b>
 
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+⭕️<b>Library : Pyrogram 1.0.7</b>
 
-⭕️<b>Source Code :</b> 👉 <a href='https://github.com/Kirodewal/URLuploader-With-Hotstar'>Click Here</a>"""
+⭕️<b>Source Code : 👉 <a href='https://github.com/Kirodewal/URLuploader-With-Hotstar'>Click Here</a></b>"""
 
 
 
@@ -60,7 +60,9 @@ You can use /deletethumbnail to delete the auto-generated thumbnail."""
 URL | newfilename | username | password"""
 
 
-    UPGRADE_TEXT = "<b>👉 Create own Clone Bot.. </b>  \n\n<a href='https://github.com/Kirodewal/URLuploader-With-Hotstar'>Click here, Fork and deploy!!</a>"
+    UPGRADE_TEXT = "<b>👉 If You Liked Our Bots And Service Feel Free To Donate...🥰</b>
+
+If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@Albert_Einstein_TG.."
     
     DOWNLOAD_START = "Trying to download your file..."
     
