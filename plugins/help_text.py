@@ -22,6 +22,16 @@ async def help_user(bot, update):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/HxBots")]]),
    )
 
+@Client.on_message(filters.command(["upgrade"]))
+async def upgrade(bot, update):
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.UPGRADE_TEXT,
+        parse_mode="html",
+        reply_to_message_id=update.message_id,
+        disable_web_page_preview=True
+    )
+
 @Client.on_message(filters.command(["start"]))
 async def start(bot, update):
     await bot.send_message(
@@ -32,14 +42,3 @@ async def start(bot, update):
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/HxBots")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/HxSupport")]]),
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Donate PhonePe ♐️", url="https://pay2me.vercel.app/kkirodewal@ybl")], [InlineKeyboardButton(text="Donate GPay 🦆", url="https://pay2me.vercel.app/kkirodewal@okaxis")]])
-
-
-@Client.on_message(filters.command(["upgrade"]))
-async def upgrade(bot, update):
-    await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.UPGRADE_TEXT,
-        parse_mode="html",
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
-    )
