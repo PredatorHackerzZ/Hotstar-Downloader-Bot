@@ -40,5 +40,5 @@ async def start(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/HxBots")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/HxSupport")]]),
-                                            [[InlineKeyboardButton(text="Donate PhonePe ♐️", url="https://pay2me.vercel.app/kkirodewal@ybl")], [InlineKeyboardButton(text="Donate GPay 🦆", url="https://pay2me.vercel.app/kkirodewal@okaxis")]],
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/HxBots")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/HxSupport")],
+                                            [[InlineKeyboardButton(text="Donate PhonePe ♐️", url="https://pay2me.vercel.app/kkirodewal@ybl")]]),
