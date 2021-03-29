@@ -12,7 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-@Client.on_message(filters.private & filters.command(["start"]))
+@Client.on_message(filters.command(["start"]))
 async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
@@ -23,8 +23,8 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/HxBots")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/HxSupport")]]),
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Donate PhonePe ♐️", url="https://pay2me.vercel.app/kkirodewal@ybl")], [InlineKeyboardButton(text="Donate GPay 🦆", url="https://pay2me.vercel.app/kkirodewal@okaxis")]])
 
-@Client.on_message(filters.private & filters.command(["help"]))
-async def help(bot, update):
+@Client.on_message(filters.command(["help"]))
+async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
@@ -34,7 +34,7 @@ async def help(bot, update):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/HxBots")]]),
    )
 
-@Client.on_message(filters.private & filters.command(["upgrade"]))
+@Client.on_message(filters.command(["upgrade"]))
 async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
