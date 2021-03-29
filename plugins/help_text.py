@@ -42,4 +42,3 @@ async def start(bot, update):
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/HxBots")], [InlineKeyboardButton(text="😇 SUPPORT", url="https://t.me/HxSupport"),
                                                     InlineKeyboardButton(text="SHARE ♐️", url="https://Pay2me.vercel.app/kkirodewal@okaxis")]]),
-        
