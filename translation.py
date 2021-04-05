@@ -60,9 +60,9 @@ You can use /deletethumbnail to delete the auto-generated thumbnail."""
 URL | newfilename | username | password"""
 
 
-    UPGRADE_TEXT = "<b>👉 If You Liked Our Bots And Service Feel Free To Donate...🥰</b>
+    UPGRADE_TEXT = """<b>👉 If You Liked Our Bots And Service Feel Free To Donate...🥰</b>
 
-If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@Albert_Einstein_TG.."
+  If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@Kirodewal...."""
     
     DOWNLOAD_START = "Trying to download your file..."
     
