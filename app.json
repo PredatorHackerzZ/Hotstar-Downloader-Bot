@@ -6,9 +6,9 @@
     "url",
     "uploader"
   ],
-  "success_url": "https://telegram.dog/Hx_UrlUploadBot",
-  "website": "https://github.com/Kirodewal",
-  "repository": "https://github.com/Kirodewal/URLuploader-With-Hotstar",
+  "success_url": "https://telegram.dog/TeleRoid_Hotstar_Bot",
+  "website": "https://github.com/P-Phreak",
+  "repository": "https://github.com/P-Phreak/URLuploader-With-Hotstar",
   "env": {
     "WEBHOOK": {
       "description": "Leave this as it is!",
@@ -33,7 +33,7 @@
     },
     "AUTH_USERS": {
       "description": "allow only pre-defined users to use this bot",
-      "value": "680815375"
+      "value": "1287407305"
     },
     "BANNED_USERS": {
       "description": "Ban Unwanted members..",
