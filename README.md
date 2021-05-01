@@ -1,8 +1,8 @@
-## Made from [AnyDLBot](https://telegram.dog/AnyDLBot)
+## Made from [AnyDLBot](https://telegram.dog/TeleRoid_AnyDLBot)
 
 ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
-#### If you find any bugs, report to [Kirodewal](https://telegram.dog/Kirodewal)
+#### If you find any bugs, report to [TeleRoid](https://telegram.dog/TeleRoid14)
 
 ### Features
 
@@ -20,7 +20,7 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 #### The Easiest Way
 
-**Upgrade** your subscription for [@HxUrlUploadBot](https://telegram.dog/Hx_UrlUploadBot) without having to run anything on your own
+**Upgrade** your subscription for [@TeleRoid_Hotstar_Bot](https://telegram.dog/TeleRoid_Hotstar_Bot) without having to run anything on your own
 
 #### Deploy to Heroku
 
@@ -28,7 +28,7 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 #### Run in your VPS
 ```sh
-git clone https://github.com/Kirodewal/URLuploader-With-Hotstar
+git clone https://github.com/P-Phreak/URLuploader-With-Hotstar
 cd URLuploader-With-Hotstar
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
