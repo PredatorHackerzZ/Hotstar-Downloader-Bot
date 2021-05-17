@@ -41,7 +41,7 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ CHANNEL ⭕️", url="https://t.me/TeleRoidGroup")], [InlineKeyboardButton(text="🛑 SUPPORT 🛑", url="https://t.me/TeleRoid14"),
-                                                    InlineKeyboardButton(text="🤖 Botlist 🤖", url="https://t.me/TGRobot_list")]]),
+                                                    InlineKeyboardButton(text="About Meh👤", url="https://t.me/TheTeleRoid")]]),
     )
 
 @Client.on_message(filters.command(["about"]))
