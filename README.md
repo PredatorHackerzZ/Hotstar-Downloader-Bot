@@ -43,7 +43,7 @@ python3 bot.py
 * /deletethumbnail   - Clear saved thumbnail
 * /showthumb         - Show saved thumbnail
 
-##👲 <b>DEV</b>
+<a>👲</a> <b>DEV</b>
 
 <p align="middle">
 <img src="https://telegra.ph/file/024846dd18debc64c91e8.jpg" width="150" height="150"><br>
