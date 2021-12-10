@@ -1,13 +1,12 @@
 class Translation(object):
 
-    START_TEXT = """Hҽʅʅσ 🙋‍♂️! I αɱ α Pσɯҽϝυʅ Hσƚʂƚαɾ URL Uρʅσαԃҽɾ Bσƚ 😎!
-I ƈαɳ ʂυρρσɾƚ Hσƚʂƚαɾ, Gσσɠʅҽ Dɾιʋҽ, αɳԃ ɱυƈԋ ɱσɾҽ Lιɳƙʂ😌!
-Sҽɳԃ Mҽ Aɳყ Dιɾҽƈƚ Dσɯɳʅσαԃ URL Lιɳƙ, I Cαɳ Uρʅσαԃ Tσ Tҽʅҽɠɾαɱ Aʂ Fιʅҽ/Vιԃҽσ!
-Aԃԃҽԃ Pҽɾɱαɳҽɳƚ TԋυɱႦɳαιʅ Sυρρσɾƚ💯😋!!
-Sυρρσɾƚ Gɾσυρ : @TeleRoid14
+    START_TEXT = """Hi I am URL Uploader Robot
+I Can Upload File/Video From Direct Link
+I Can Download From YouTube,Googledrive,Hotstar etc.....
+
 """
 
-    HELP_USER = """It's not that complicated to use meh! 😅
+    HELP_USER = """There Below Instructions Follow
     
 1. Send Me A Tumbnail if required. It'll be saved permanently.💯
 2. If Thumbnail Wasn't Set By You, It'll Be Auto Generated From The File.🥳
@@ -19,27 +18,23 @@ Sυρρσɾƚ Gɾσυρ : @TeleRoid14
    Video  - Give File as video without Screenshots
    DFile  - Give File without Screenshots
 NB : It is Recommended To Use A Custom Thumbnail Because, Some Time Won't Upload The File Without a Custom Thumbnail.
-Support Group : @TeleRoid14
+If Any Issue r help Contact @hb4all1_bot
 """
 
 
-    ABOUT_TEXT = """<b>🤖 My Name : @TeleRoid_Hotstar_Bot</b>
+    ABOUT_TEXT = """<b>🤖 My Name : @URL_Uploader_Robot</b>
 
-<b>👨‍💻 Creator : @PredatorHackerzZ_bot</b>
+<b>👨‍💻 Creator : @happboy59</b>
 
 <b>📝 Language : Python3</b>
 
-<b>📡 Server : <a href='https://www.heroku.com'> Heroku </a></b>
+<b>🌐 HB4All : <a href='https://t.me/hb4all'> HB4All </a></b>
 
 <b>📔 Library : Pyrogram 1.0.7</b>
 
-<b>📌 Source Code : 👉 <a href='https://github.com/P-Phreak/URLuploader-With-Hotstar'>Click Here</a></b>
+<b>🤖 HB4All Bot : 👉 <a href='https://t.me/hb4all_bot'>HB4All Bot</a></b>
 
-<b>🛑 Discussion : 👉 <a href='https://t.me/TeleRoid14'> Support Group </a></b>
-
-<b>⭕ Updates : 👉 <a href='https://t.me/TeleRoidGroup'> Channel Group </a></b>
-
-<b>💎 Telegram Botlist : <a href='https://t.me/TGRobot_List'> TGRobot_List </a></b>"""
+<b>💎 Botlist : <a href='https://t.me/BotlistHB4All'> Bot List </a></b>"""
 
 
 
@@ -55,16 +50,16 @@ You can use /deletethumbnail to delete the auto-generated thumbnail."""
 URL | newfilename | username | password"""
 
 
-    UPGRADE_TEXT = """<b>👉 If You Liked Our Bots @TheTeleRoid And Service Feel Free To Donate...Us 🥰</b>
-  If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@PredatorHackerzZ_bot...."""
+    UPGRADE_TEXT = """<b>👉 If You Liked Our Bots And Service Feel Free To Donate...Us 🥰</b>
+  If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@hb4all1_bot...."""
     
-    DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@TheTeleRoid14"
+    DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@hb4all_bot"
     
     UPLOAD_START = "Trying to upload.....📤"
     
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \n\nUploaded in {} seconds.\n\nFor TeleRoid Bots \n\nJoin : @TheTeleRoid and @TGRobot_List"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \n\nUploaded in {} seconds."
 
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nAre You Fool, I cannot upload files greater than 1.95GB due to Telegram API limitations."
+    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nI cannot upload files greater than 1.95GB due to Telegram API limitations."
 
     SAVED_CUSTOM_THUMB_NAIL = "Custom thumbnail saved✅. This will be permanent.\n\nUse /deletethumbnail to clear it."
 
@@ -72,7 +67,7 @@ URL | newfilename | username | password"""
 
     CUSTOM_CAPTION_UL_FILE = " "
 
-    SLOW_URL_DECED = "Fucking Fool! This seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+    SLOW_URL_DECED = "This seems to be a very slow URL.Get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
 
     NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
     
