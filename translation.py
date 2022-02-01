@@ -48,8 +48,37 @@ You can use /deletethumbnail to delete the auto-generated thumbnail."""
 URL | newfilename | username | password"""
 
 
-    UPGRADE_TEXT = """<b>👉 If You Liked Our Bots And Service Feel Free To Donate...Us 🥰</b>
-  If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@hb4all1_bot...."""
+    UPGRADE_TEXT = """HB4All Robots V.2 
+
+@HB4All_Bot - Chief Bot
+@HB4All2_Bot -  Create Buttons In Post
+@HB4AllSeries_Bot - Series Bot
+@Renamer_Ro_Bot - You Can Rename Any File
+@Tgfilestorerobot - Store File And Send Private Link
+@URL_Uploader_Robot- Send Any Direct Link To Upload As Telegram File And Video
+@Url_Uploaderv1_Robot - URl Uploader V.1
+@Groups_Control_Bot - Control Your Group With Awesome Features
+@FiltersRobot - Filter Bot For Groups
+@Autofiltersrobot- Auto Filter And Manual Filters For Group
+@File2VideoRobot - Bot Converts File2Video Or Video2File
+@YTHB4AllBot - Download Youtube Videos
+@FileStreamingRobot - Send File And Get Stream & Download Link
+@FastLinkRobot- Generate TG File 2 Shareable Link Fast🤯
+@Upload2telegraphbot - Get Permanent Link For Photos
+@GDriveUploader_Robot - Upload To Your Drive
+@GPLinkHBbot - Shorten Link To Gplink
+@BitlyLinkHBbot - Shorten Link To Bitly Link (Ad-free)
+@MegaDownloadHB4AllBot - Download Mega.nz Files
+@MegaUploadHB4AllBot - Upload Fiels To Mega.nz Your Account 
+@DoodstreamRobot - Upload 2 Your DoodStream Account
+@CloudStreamRobot - Tg File To Stream Online And Download 
+@MergeRobot - Merge 10Video In One Video 
+@QRcode_HBbot - QR Code Decode & Encode
+@SelenaGomez_Robot Movie Series Bot Works In Group
+@MultiHBbot - Multi Purpose Robot
+@HB4AllRobot - Multi Purpose Robot
+
+Check The Bot Status - https://t.me/hb4all/169"""
     
     DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@hb4all_support"
     
