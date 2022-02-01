@@ -11,20 +11,18 @@ I Can Download From YouTube,Googledrive,Hotstar etc.....
 1. Send Me A Tumbnail if required. It'll be saved permanently.💯
 2. If Thumbnail Wasn't Set By You, It'll Be Auto Generated From The File.🥳
 3. Send Me Any Link To Be Uploaded To Telegram.
-4. Press /deletthumbnail To Delete Your Current Custom Thumbnail
+4. Press /deletethumbnail To Delete Your Current Custom Thumbnail
 5. Select the button.
    SVideo - Give File as video with Screenshots
    DFile  - Give File with Screenshots
    Video  - Give File as video without Screenshots
    DFile  - Give File without Screenshots
 NB : It is Recommended To Use A Custom Thumbnail Because, Some Time Won't Upload The File Without a Custom Thumbnail.
-If Any Issue r help Contact @hb4all1_bot
+If Any Issue r help Contact @HB4All_Support
 """
 
 
     ABOUT_TEXT = """<b>🤖 My Name : @URL_Uploader_Robot</b>
-
-<b>👨‍💻 Creator : @happboy59</b>
 
 <b>📝 Language : Python3</b>
 
@@ -53,7 +51,7 @@ URL | newfilename | username | password"""
     UPGRADE_TEXT = """<b>👉 If You Liked Our Bots And Service Feel Free To Donate...Us 🥰</b>
   If You Want Any Private Bot Or Supscription Feel Free To Contact Me...@hb4all1_bot...."""
     
-    DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@hb4all_bot"
+    DOWNLOAD_START = "Trying to download to my Server, Wait For Some Time 😇\n\n@hb4all_support"
     
     UPLOAD_START = "Trying to upload.....📤"
     
