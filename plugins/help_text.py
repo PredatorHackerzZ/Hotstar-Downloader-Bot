@@ -22,7 +22,7 @@ async def help_user(bot, update):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/hb4all")]]),
    )
 
-@Client.on_message(filters.command(["upgrade"]))
+@Client.on_message(filters.command(["hb4allbots"]))
 async def upgrade(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
